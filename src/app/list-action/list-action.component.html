@@ -1,0 +1,37 @@
+<!-- action-list.component.html -->
+<div class="container mt-4">
+  <h2>Action List</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Objective</th>
+        <th>Responsible</th>
+        <th>Beneficiaries</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngIf="actions.length > 0">
+        <tr>
+          <td>{{ actions[0].name }}</td>
+          <td>{{ actions[0].objective }}</td>
+          <td>{{ actions[0].responsible }}</td>
+          <td>{{ actions[0].beneficiaries }}</td>
+          <td>
+            <button class="btn btn-danger" (click)="deleteAction(0)">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>{{ actions[1].name }}</td>
+          <td>{{ actions[1].objective }}</td>
+          <td>{{ actions[1].responsible }}</td>
+          <td>{{ actions[1].beneficiaries }}</td>
+          <td>
+            <button class="btn btn-danger" (click)="deleteAction(0)">Delete</button>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>

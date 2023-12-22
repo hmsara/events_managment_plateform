@@ -1,0 +1,58 @@
+.landing-page {
+    text-align: center;
+  
+    .header {
+      background-color: #ff9100de;
+      color: #fff;
+      padding: 50px;
+  
+      h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 1.2em;
+      }
+    }
+  
+    .features {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+  
+      .feature {
+        max-width: 300px;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+  
+        img {
+          max-width: 100%;
+          margin-bottom: 10px;
+        }
+  
+        h2 {
+          color: #333;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          color: #555;
+        }
+      }
+    }
+  
+    .footer {
+      background-color: #f8f8f8;
+      padding: 20px;
+  
+      p {
+        color: #555;
+      }
+    }
+  }
+  

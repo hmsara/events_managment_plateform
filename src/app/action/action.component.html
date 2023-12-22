@@ -1,0 +1,33 @@
+<div class="container mt-4">
+  <h2>Add Action</h2>
+  <form (ngSubmit)="addAction()" >
+    <div class="mb-3">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" class="form-control" placeholder="Enter name" required name="name">
+      <div class="invalid-feedback">Please enter a name.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="objective" class="form-label">Objective:</label>
+      <input type="text" id="objective" class="form-control" placeholder="Enter objective" required  name="objective">
+      <div class="invalid-feedback">Please enter an objective.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="responsible" class="form-label">Responsible:</label>
+      <input type="text" id="responsible" class="form-control" placeholder="Enter responsible" required  name="responsible">
+      <div class="invalid-feedback">Please enter a responsible person.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="beneficiaries" class="form-label">Beneficiaries:</label>
+      <input type="number" id="beneficiaries" class="form-control" placeholder="Enter number of beneficiaries" required  name="beneficiaries">
+      <div class="invalid-feedback">Please enter a valid number of beneficiaries.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Action</button>
+  </form>
+</div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  
